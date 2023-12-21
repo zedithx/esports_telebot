@@ -18,7 +18,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 """initialising variables/bot"""
-TOKEN = '6380834715:AAG5SC5A49msqySoXpTBb7b-E3T-BHlJqsI'
+TOKEN = ''
 bot = telegram.Bot(token=TOKEN)
 
 # define no. of variables to be stored
@@ -32,7 +32,7 @@ booking_dict = {'1': "Sept 26 (7-830)", '2': "Sept 26 (830-10)", '3': "Oct 3 (7-
 """Initialising firebase creds"""
 cred_obj = firebase_admin.credentials.Certificate('./creds.json')
 default_app = firebase_admin.initialize_app(cred_obj, {
-    'databaseURL': 'https://esportsbooking-1ee29-default-rtdb.asia-southeast1.firebasedatabase.app'
+    'databaseURL': ''
 })
 ref = db.reference("/")
 
